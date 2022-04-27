@@ -1,0 +1,16 @@
+@startuml
+actor doador
+actor adotante
+(CadastrarUsuario) as (cadastro)
+doador -u-> cadastro
+adotante --> cadastro
+(CompartilharPost) as (compartilhar)
+doador -u-> compartilhar
+adotante --> compartilhar
+(CriarPost) as (post)
+doador -r-> post
+(PesquisarPets) as (pesquisar)
+adotante -r- pesquisar
+(ContatarDoador) as (contatar)
+adotante -l-> contatar
+@enduml

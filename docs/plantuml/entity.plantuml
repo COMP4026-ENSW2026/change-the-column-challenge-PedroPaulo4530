@@ -1,0 +1,21 @@
+@startuml
+entity Usuario {
+    * cpf
+    * nome
+    * email
+    * telefone
+}
+entity Publicacao {
+    nome
+    idade
+    * tipo
+    * sexo
+    * raça
+    * porte
+    * vacinas
+    * doador
+    * ativo
+}
+
+Usuario ||--o{ Publicacao 
+@enduml
